@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Lección 01 - Bootstrap</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lección 01 - Bootstrap</title>
 
-	<!-- Importacion del jQuery -->
-	<script src="js/lib/jquery-2.1.4.min.js"></script>
-	
-	<!-- Importacion del Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
 
+    <!-- Importacion del Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-	<style>
-		
-		.textoVerde{
-			color: green;
-			font-weight: bold;
-		}
+    <style>
+      .textoVerde {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
 
-	</style>
+    <script>
+      //alternativa 1 para cargar estilos despues de cargar toda la pagina
 
+      /*  $(document).ready(function () {
+        $("ul").addClass("textoVerde");
+      }); */
 
-</head>
-<body>
+      //alternativa 2 para cargar estilos despues de cargar toda la pagina
 
+      $(function () {
+        $("ul").addClass("textoVerde");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lección 1</h1>
 
-<ul>
-	<li>Hola 1</li>
-	<li>Hola 2</li>
-	<li>Hola 3</li>
-</ul>
+      <ul>
+        <li>Hola 1</li>
+        <li>Hola 2</li>
+        <li>Hola 3</li>
+      </ul>
 
-<ul>
-	<li>Negrita</li>
-	<li>Negrita</li>
-	<li>Negrita</li>
-</ul>
+	  <table class="table table-striped">
+		<tr>
+			<td>Campo</td>
+			<td>Campo</td>
+			<td>Campo</td>
+			<td>Campo</td>
+			<td>Campo</td>
+		</tr>
+	</table>
 
-
-
-<script>
-	
-	jQuery('ul').addClass('textoVerde');
-
-</script>
-
-
-
-</body>
+	<button>asd</button>
+	<a href="">Punto de ancla</a>
+    </div>
+  </body>
 </html>
